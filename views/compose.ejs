@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<div class="compose-container">
+  <h1>Create a new post</h1>
+  <form action="/compose" method="POST">
+    <label for="postTitle">Write a title...</label>
+    <br>
+    <input id="postTitle" type="text" name="postTitle" autocomplete="off">
+    <br>
+    <label for="postContent">Write your post...</label>
+    <br>
+    <textarea id="postContent" type="text" name="postContent" rows="8" autocomplete="off"></textarea>
+    <br>
+    <label for="postCategory">Enter the category...</label>
+    <br>
+    <input id="postCategory" type="text" name="postCategory" autocomplete="off">
+    <br>
+    <div class="confirm">
+      <a href="/">Cancel</a>
+      <button class="btn-to-new">Submit</button>
+    </div>
+  </form>
+</div>
+
+<%- include("partials/footer") %>

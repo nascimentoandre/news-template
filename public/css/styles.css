@@ -1,0 +1,153 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  --blue: #82caff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blue);
+  border-bottom: 1px solid black;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+.btn-to-new {
+  border: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: var(--blue);
+}
+
+.btn-to-new:hover {
+  color: white;
+  box-shadow: 3px 3px 6px black;
+}
+
+.card {
+  border: 1px solid black;
+  width: 18rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.card a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.confirm {
+  margin-top: 1.5rem;
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirm a {
+  color: black;
+}
+
+.compose-container {
+  padding: 2rem 0 0 5%;
+}
+
+.compose-container input,
+.compose-container textarea {
+  width: 40rem;
+}
+
+.empty-flexbox {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.home-flexbox {
+  padding: 5% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-items input {
+  border: 0;
+  border-radius: 10px;
+  height: 25px;
+  margin-left: 2rem;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 3rem;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 18px;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    justify-content: start;
+  }
+
+  nav h1 {
+    margin-left: 5vw;
+  }
+
+  .navbar-items {
+    display: none;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar-items a {
+    margin-bottom: 0.6rem;
+  }
+
+  .navbar-items.active {
+    display: flex;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+}

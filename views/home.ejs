@@ -1,0 +1,15 @@
+<%- include("partials/header") %>
+
+<div class="home-flexbox">
+  <% posts.forEach(function(post) { %>
+    <div class="card">
+      <h1> <%= post.title %> </h1>
+      <p> <%= post.content.slice(0, 200) + "..." %> <a href="#">Read more</a> </p>
+      
+      <p> Category: <%= post.category %> </p>
+    </div>
+    <% }); %>
+</div>
+
+<%- include("partials/footer") %>
+
