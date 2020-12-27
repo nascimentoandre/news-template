@@ -4,7 +4,7 @@
   <% posts.forEach(function(post) { %>
     <div class="card">
       <h1> <%= post.title %> </h1>
-      <p> <%= post.content.slice(0, 200) + "..." %> <a href="#">Read more</a> </p>
+      <p> <%= post.content.slice(0, 200) + "..." %> <a href="/posts/<%= post.kebabTitle %>">Read more</a> </p>
       
       <p> Category: <%= post.category %> </p>
     </div>

@@ -32,6 +32,10 @@ footer {
   text-align: center;
 }
 
+.btn-container {
+  text-align: center;
+}
+
 .btn-to-new {
   border: 1px solid black;
   cursor: pointer;
@@ -105,6 +109,15 @@ footer {
   margin-left: 2rem;
 }
 
+.post-container {
+  max-width: 70vw;
+  margin: 5rem auto;
+}
+
+.post-container h1 {
+  text-align: center;
+}
+
 .toggle-button {
   position: absolute;
   top: 1.75rem;
@@ -121,6 +134,18 @@ footer {
   height: 2px;
   width: 100%;
   background-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+  .confirm {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .compose-container input,
+  .compose-container textarea {
+    width: 90vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
