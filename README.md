@@ -1,8 +1,8 @@
 # News template
 
-![Preview-Screens](https://github.com/nascimentoandre/news-template/prints/3.png)
+![Preview-Screens](https://github.com/nascimentoandre/news-template/blob/main/prints/3.png)
 
-For more print screens, check the [prints](https://github.com/nascimentoandre/news-template/prints) directory.
+For more print screens, check the [prints](https://github.com/nascimentoandre/news-template/tree/main/prints) directory.
 
 # About
 
@@ -22,4 +22,4 @@ This is a template of a web application in which a user can create news that are
 
 # Observations
 
-- Maybe I'll re-write the frontend using React, just to try it out, and use a database to save data.
+- Maybe someday I'll re-write the frontend using React, just to try it out, and use a database to save data.
